@@ -1,6 +1,6 @@
 # osint-tool-kit
 
-python3 -m pip install holehe && python3 -m pip install requests && python3 -m pip install colorama
+python3 -m pip install holehe && python3 -m pip install requests && python3 -m pip install colorama && python3 -m pip install holehe
 
 get an api key from https://numverify.com/ and https://extreme-ip-lookup.com/ (both have free plans)
 
