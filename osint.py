@@ -70,6 +70,13 @@ def geoip():
     print(f"{Fore.GREEN}IP Whois:\nIP: {Fore.RED}{geo['query']}\n{Fore.GREEN}Status: {Fore.RED}{geo['status']}\n{Fore.GREEN}IP Type: {Fore.RED}{geo['ipType']}\n{Fore.GREEN}Org: {Fore.RED}{geo['org']}\n{Fore.GREEN}ISP: {Fore.RED}{geo['isp']}\n{Fore.GREEN}Country: {Fore.RED}{geo['country']}\n{Fore.GREEN}City: {Fore.RED}{geo['city']}\n{Fore.GREEN}Continent: {Fore.RED}{geo['continent']}\n{Fore.GREEN}Region: {Fore.RED}{geo['region']}\n{Fore.GREEN}Latitude: {Fore.RED}{geo['lat']}\n{Fore.GREEN}Longitude: {Fore.RED}{geo['lon']}")
     print(f'{Fore.RESET}')
 
+def nmap():
+    Clear()
+    target = input(f'{Fore.GREEN}Enter IP/Domain here (eg. 1.1.1.1 or www.google.com DO NOT PUT A LINK!): ')
+    print(f'{Fore.RESET}')
+    Clear()
+    os.system(f'nmap -v -A {target}')
+
 def numverif():
     Clear()
     if numverifykey == ('key-here'):
@@ -297,12 +304,13 @@ def startup():
     ╔╗ ┬ ┬  ╦  ┌─┐┌┬┐┬ ┬┌─┐            
     ╠╩╗└┬┘  ║  │ │ │ │ │└─┐            
     ╚═╝ ┴   ╩═╝└─┘ ┴ └─┘└─┘            
-
+    
     {Fore.BLUE}[1]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Search for someones public records
     {Fore.BLUE}[2]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Check if username is available on different social platforms
     {Fore.BLUE}[3]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Preform whois lookup on the specified IP
     {Fore.BLUE}[4]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Preform whois lookup on the specified phone number
-    {Fore.BLUE}[5]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Check what an email is used on{Fore.RESET}
+    {Fore.BLUE}[5]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Check what an email is used on
+    {Fore.BLUE}[6]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Run an nmap scan on specified IP/domain {Fore.RED}(MUST HAVE NMAP INSTALLED){Fore.RESET}
     ''')
     print()
     initial = int(input(f'    {Fore.GREEN}> '))
@@ -316,6 +324,8 @@ def startup():
         numverif()
     elif initial == 5:
         hole()
+    elif initial == 6:
+        nmap()
     else:
 	    print(f'{Fore.RED}[ERROR]: {Fore.YELLOW}Action not found')
 startup()
