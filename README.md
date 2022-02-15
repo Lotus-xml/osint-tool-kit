@@ -7,3 +7,5 @@ get an api key from https://numverify.com/ and https://extreme-ip-lookup.com/ (b
 then enter the keys in specified places (at the top of the file)
 
 git clone https://github.com/Lotus-xml/osint-tool-kit.git
+
+python3 osint.py
