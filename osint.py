@@ -1,5 +1,4 @@
-#!/bin/usr/python3
-
+#API keys go below this
 extremeiplookupkey = 'key-here'
 numverifykey = 'key-here'
 
@@ -301,9 +300,9 @@ def startup():
     ╔═╗┌─┐┬┌┐┌┌┬┐  ╔╦╗┌─┐┌─┐┬   ╦╔═┬┌┬┐
     ║ ║└─┐││││ │    ║ │ ││ ││───╠╩╗│ │ 
     ╚═╝└─┘┴┘└┘ ┴    ╩ └─┘└─┘┴─┘ ╩ ╩┴ ┴ 
-    ╔╗ ┬ ┬  ╦  ┌─┐┌┬┐┬ ┬┌─┐            
-    ╠╩╗└┬┘  ║  │ │ │ │ │└─┐            
-    ╚═╝ ┴   ╩═╝└─┘ ┴ └─┘└─┘            
+          ╔╗ ┬ ┬  ╦  ┌─┐┌┬┐┬ ┬┌─┐
+          ╠╩╗└┬┘  ║  │ │ │ │ │└─┐
+          ╚═╝ ┴   ╩═╝└─┘ ┴ └─┘└─┘
     
     {Fore.BLUE}[1]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Search for someones public records
     {Fore.BLUE}[2]{Fore.RESET} {Fore.GREEN}- {Fore.CYAN}Check if username is available on different social platforms
