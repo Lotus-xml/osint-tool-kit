@@ -307,9 +307,9 @@ def startup():
     print()
     initial = int(input(f'    {Fore.GREEN}> '))
     if initial == 1:
-	    peoplesearch()
+	peoplesearch()
     elif initial == 2:
-	    usernameSearch()
+	usernameSearch()
     elif initial == 3:
         geoip()
     elif initial == 4:
