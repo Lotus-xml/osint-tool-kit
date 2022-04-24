@@ -293,7 +293,7 @@ def usernameSearch():
         print(f'{Fore.RED}Soloto [+]')
 
 def startup():
-    Clear(  )
+    Clear()
     print(f'''
 
     {Fore.RED}
